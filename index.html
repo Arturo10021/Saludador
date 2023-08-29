@@ -1,11 +1,18 @@
 <html>
   <body>
     <h1>Bot Saludador</h1>
-    <form id="saludo-form">
-      <input type="text" id="nombre" placeholder="Nombre" />
-      <button type="submit">Saludar</button>
+    <form id="botSaludos-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre"/>
+      <label for="nombre">Genero M/F:</label>
+      <input type="text" id="genero"/>
+      <label for="nombre">Edad:</label>
+      <input type="text" id="edad"/>
+      <label for="nombre">Idioma ES/EN:</label>
+      <input type="text" id="idioma"/>
+      <input type="submit" value="Enviar"/>
     </form>
-    <p id="saludo"></p>
+    <div id="resultado-div"></div>
     <script type="module" src="./src/presenter.js"></script>
   </body>
 </html>

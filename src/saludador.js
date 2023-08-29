@@ -17,16 +17,16 @@ export class botSaludos {
         }
         saludo = tipoSaludo[add] + " ";
 
-        if (genero === "M" && edad >=30 && idioma != "en") {
+        if ((genero === "M" || genero === "m") && edad >=30 && idioma != "en") {
             saludo += "Sr. ";
         }
-        if (genero === "F" && edad >=30 && idioma != "en") {
+        if ((genero === "F" || genero === "f") && edad >=30 && idioma != "en") {
             saludo += "Sra. ";
         }
-        if (genero === "M" && edad >=30 && idioma === "en") {
+        if ((genero === "M" || genero === "m") && edad >=30 && idioma === "en") {
             saludo += "Mr. ";
         }
-        if (genero === "F" && edad >=30 && idioma === "en") {
+        if ((genero === "F" || genero === "f") && edad >=30 && idioma === "en") {
             saludo += "Mrs. ";
         }
 
