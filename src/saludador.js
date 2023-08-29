@@ -13,6 +13,14 @@ export class botSaludos {
             add = 0;
         }
         saludo = tipoSaludo[add] + " ";
+
+        if (genero === "M" && edad >=30) {
+            saludo += "Sr. ";
+        }
+        if (genero === "F" && edad >=30) {
+            saludo += "Sra. ";
+        }
+
       saludo+= nombre;
       console.log(nombre);
       return saludo;

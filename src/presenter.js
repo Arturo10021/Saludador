@@ -2,11 +2,14 @@ import {botSaludos} from "./saludador.js";
 
     const nombre = document.querySelector("#nombre");
     const form = document.querySelector("#botSaludos-form");
+    const horaActual = new Date().getHours();
+    const genero = document.querySelector("#genero");
     const div = document.querySelector("#resultado-div");
     
     form.addEventListener('submit', function (event) {
       event.preventDefault();
-        const botSaludos = new botSaludos();
-        div.innerHTML = "<p>"+botSaludos.saludar(nombre.value)+"</p>";
+        const botsaludos = new botSaludos();
+        console.log(horaActual.value);
+        div.innerHTML = "<p>"+botsaludos.saludar(nombre.value,horaActual,genero.value)+"</p>";
     }
 );

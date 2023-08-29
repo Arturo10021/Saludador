@@ -20,4 +20,16 @@ describe("Saludador", () => {
       let resultado = botsaludos.saludar("Pedro", 21) 
       expect(resultado).toEqual("Buenas noches Pedro");
     });
+    it("Saludar a Pedro mayor", () => {
+      let botsaludos = new botSaludos();
+      let resultado = botsaludos.saludar("Pedro", 11, "M", 30) 
+      expect(resultado).toEqual("Buenos dias Sr. Pedro");
+    });
+
+    it("Saludar a Maria mayor", () => {
+      let botsaludos = new botSaludos();
+      let resultado = botsaludos.saludar("Maria", 22, "F", 30) 
+      expect(resultado).toEqual("Buenas noches Sra. Maria");
+    });
+
   });
